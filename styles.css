@@ -1,126 +1,121 @@
-@font-face{
-    font-family: Comfortaa;
-    src: url(Comfortaa-VariableFont_wght.ttf); 
+@font-face {
+  font-family: Comfortaa;
+  src: url(Comfortaa-VariableFont_wght.ttf);
 }
-body{
-    margin: 0;
-    font-family: Comfortaa;
-    font: 
-    font-size: 1em;
+body {
+  margin: 0;
+  font-family: Comfortaa;
+  font-size: 1em;
 }
-#navbar{
-    width: 100vw;
-    height: 12vh;
-    background-color: #5c5c5c;
-    position: sticky;
-    top:0;
-    text-align: end;
+#navbar {
+  width: 100vw;
+  height: 12vh;
+  background-color: #5c5c5c;
+  position: sticky;
+  top: 0;
+  text-align: end;
 }
-#welcome-section{
-    background-color: #14122f;
-    background-image: linear-gradient(45deg, #14122f, #36355f);
-    width: 80vw;
-    height: 58vh;
-    
-    padding: 10vw;
+#welcome-section {
+  background-color: #14122f;
+  background-image: linear-gradient(45deg, #14122f, #36355f);
+  width: 80vw;
+  height: 58vh;
+  padding: 10vw;
 }
-#my-name{
-    color: #bfbfbf;
-    font-weight: 400;
-    width: fit-content;
-    height: fit-content;
-    font-size: 3em;
+#my-name {
+  color: #bfbfbf;
+  font-weight: 400;
+  width: fit-content;
+  height: fit-content;
+  font-size: 3em;
 }
-#intro-sentence{
-    color:#9f9f9f;
+#intro-sentence {
+  color: #9f9f9f;
+  font-size: 2em;
+  font-weight: 1;
+  font-style: oblique;
+  margin-right: 1vw;
+  margin-left: 20vw;
+  text-align-last: right;
+}
+#projects {
+  width: 90vw;
+  height: auto;
+  background-color: #7e6868;
+  padding: 5vw;
+  background-image: linear-gradient(-45deg, #14122f, #7e6868);
+  display: grid;
+  grid-template-areas:
+    "tile tile tile"
+    "tile tile tile";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 15vh;
+  grid-column-gap: 2vw;
+}
+.project-tile {
+  padding: 5vmin;
+  align-content: space-around;
+}
+.proj-links {
+  font-size: 1em;
+}
+.proj-img {
+  background-color: black;
+}
+
+a {
+  color: #dfdfdf;
+  margin-right: 5vw;
+  display: inline-block;
+  font-size: 1.5em;
+  padding-top: 5vh;
+  text-decoration: none;
+}
+#contact-info {
+  width: 80vw;
+  height: 50vh;
+  background-color: #5c5c5c;
+  padding: 5vh 10vw;
+}
+#contact-title {
+  text-align: center;
+  color: #dfdfdf;
+  font-weight: 300;
+  font-size: 2em;
+}
+.contact-links {
+  text-align: center;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 1100px) {
+  #my-name {
     font-size: 2em;
-    font-weight: 1;
-    font-style: oblique;
-    margin-right: 1vw;
-    margin-left: 20vw;
-    text-align-last: right;
-}
-#projects{
-    width: 90vw;
-    height:auto;
-    background-color: #7e6868;
-    padding: 5vw;
-    background-image: linear-gradient(-45deg, #14122f, #7e6868);
-    display:grid;
-    grid-template-areas: 
-    "img1 img2 img3"
-    "img1 img2 img3"
-    "img1 img2 img3"
-    ". . ."
-    "link1 link2 link3"
-    ". . ."
-    "img4 img5 img6"
-    "img4 img5 img6"
-    "img4 img5 img6"
-    ". . ."
-    "link4 link5 link6";
+    text-align: center;
+    margin-bottom: 10vh;
+  }
+  #intro-sentence {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+  }
+  a {
+    font-size: 0.8em;
+  }
+  #contact-title {
+    font-size: 1.3em;
+  }
+  #projects {
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6";
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-row-gap: 10vh;
     grid-column-gap: 2vw;
-    
-    
-}
-.project-tile{
-    
-    padding: 5vh;
-
-
-}
-.proj-links{
-    font-size: 1em;
-}
-
-
-
-
-
-
-a{
-    color: #dfdfdf;
-    margin-right: 5vw;
-    display: inline-block;
-    font-size: 1.5em;
-    padding-top: 5vh;  
-    text-decoration: none;
-}
-#contact-info{
-    width: 80vw;
-    height: 50vh;
-    background-color: #5c5c5c;
-    padding: 5vh 10vw;
-}
-#contact-title{
-    text-align: center;
-    color:#dfdfdf;
-    font-weight: 300;
-    font-size: 2em;
-}
-.contact-links{
-    text-align: center;
-    
-    justify-content: space-evenly;
-}
-@media screen and (max-width: 1100px){
-    #my-name{
-        font-size: 2em;
-        text-align: center;
-        margin-bottom: 10vh;
-    }
-    #intro-sentence{
-        font-size: 1.5em;
-        text-align: center;
-        margin: 0;
-    }
-    a{
-    font-size: 0.8em;
-    }
-    #contact-title{
-        font-size: 1.3em;
-    }
+  }
 }
